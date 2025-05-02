@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,40 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom agricultural theme colors
+				"agri-green": {
+					100: "#E1F7D5",
+					200: "#C2EAAA",
+					300: "#9BD97E",
+					400: "#78C75D",
+					500: "#4D7C0F",
+					600: "#3E6D0A",
+					700: "#2F5A08",
+					800: "#244405",
+					900: "#1A3503"
+				},
+				"agri-brown": {
+					100: "#EDE0D4",
+					200: "#E6CCB2",
+					300: "#DDB892",
+					400: "#B08968",
+					500: "#9C6644",
+					600: "#7C2D12",
+					700: "#64230E",
+					800: "#4D1A0B",
+					900: "#3B1407"
+				},
+				"agri-gold": {
+					100: "#FEF3C7",
+					200: "#FDE68A",
+					300: "#FCD34D",
+					400: "#FBBF24",
+					500: "#F59E0B",
+					600: "#D97706",
+					700: "#B45309",
+					800: "#92400E",
+					900: "#78350F"
 				}
 			},
 			borderRadius: {
@@ -84,11 +119,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif']
 			}
 		}
 	},
